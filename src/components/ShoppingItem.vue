@@ -1,9 +1,9 @@
 <template>
   <div class="shopping-item">
-    <img src="@/assets/corsa.png" alt="Foto do Corsa não-capotado" />
-    <h1>Corsa Horizon</h1>
-    <p>Dá pra fazer altos drifts com ele</p>
-    <strong class="price">R$ 8000</strong>
+    <img :src="`/products/${image}`" alt="Foto do Corsa não-capotado" />
+    <h1>{{name}}</h1>
+    <p>{{description}}</p>
+    <strong class="price">R$ {{price}}</strong>
     <button class="add-to-cart">+</button>
   </div>
 </template>
@@ -62,3 +62,15 @@ button {
   background: #94ffab;
 }
 </style>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component
+export default class ShoppingItem extends Vue {
+  @Prop() private name!: string;
+  @Prop() private image!: string;
+  @Prop() private price!: number;
+  @Prop() private description!: string;
+}
+</script>

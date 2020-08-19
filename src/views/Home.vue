@@ -2,19 +2,27 @@
   <div id="homepage">
     <h1>Só item barato</h1>
     <section class="shopping-items">
-      <ShoppingItem />
-      <ShoppingItem />
-      <ShoppingItem />
-      <ShoppingItem />
+      <ShoppingItem
+        v-for="product of productList"
+        :key="product.id"
+        :image="product.image"
+        :name="product.name"
+        :description="product.description"
+        :price="product.price"
+      />
     </section>
   </div>
 </template>
 
 <script>
 import ShoppingItem from "@/components/ShoppingItem";
+import productList from "@/products.json";
 
 export default {
   components: { ShoppingItem },
+  data: function () {
+    return { productList };
+  },
 };
 </script>
 
