@@ -30,7 +30,7 @@ a {
 }
 
 .nav-item {
-    flex: 1;
+  flex: 1;
 }
 
 .lojinha-logo {
@@ -39,5 +39,7 @@ a {
   font-weight: bold;
   font-size: 28px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 </style>
