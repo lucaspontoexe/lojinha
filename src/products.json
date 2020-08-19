@@ -1,0 +1,16 @@
+[
+    {
+        "id": 0,
+        "name": "Corsa Horizon",
+        "image": "corsa.png",
+        "price": 8000,
+        "description": "Dá pra dar altos drifts com ele"
+    },
+    {
+        "id": 1,
+        "name": "El Mosco",
+        "image": "mosco.png",
+        "price": 49.99,
+        "description": "Esse é perigoso, cuidado"
+    }
+]
