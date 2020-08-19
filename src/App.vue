@@ -1,11 +1,7 @@
 <template>
   <div id="app">
-    lojinha
-    <div id="nav">
-      <router-link to="/">Início</router-link> |
-      <router-link to="/about">Carrinho (0)</router-link>
-    </div>
-    <router-view/>
+    <Header />
+    <router-view />
   </div>
 </template>
 
@@ -31,3 +27,11 @@
   }
 }
 </style>
+
+<script>
+import Header from "@/components/Header";
+
+export default {
+  components: { Header },
+};
+</script>
