@@ -4,11 +4,8 @@
     <section class="shopping-items">
       <ShoppingItem
         v-for="product of productList"
+        :data="product"
         :key="product.id"
-        :image="product.image"
-        :name="product.name"
-        :description="product.description"
-        :price="product.price"
       />
     </section>
   </div>
