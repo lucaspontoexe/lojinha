@@ -17,7 +17,8 @@ nav {
   position: sticky;
   top: 0px;
   height: 60px;
-  background: black;
+  background: rgba(0,0,0,0.8);
+  z-index: 1;
 
   display: flex;
   align-items: center;
