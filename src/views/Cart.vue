@@ -1,11 +1,41 @@
 <template>
-<div id="page-cart">
+  <div id="page-cart">
     <h1>Carrinho</h1>
+    <!-- TODO de baixíssima prioridade: reduzir o tamanho desses itens. -->
+    <div>
+      <i style="font-style: italic;">Grandes</i> itens pra você se impressionar
+    </div>
 
-    <CartItem/>
-    <CartItem/>
+    <CartItem />
+    <CartItem />
 
-</div>
+    <form action="#" class="checkout">
+      <h1>Total: R$ 16000</h1>
+
+      <div class="field">
+        <label for="address">Endereço</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          disabled
+          placeholder="Não precisa digitar. Nós já sabemos. 🕵️‍♀️"
+        />
+      </div>
+
+      <div class="field">
+        <label for="card-number">Número do Cartão de Crédito</label>
+        <input
+          type="text"
+          name="card-number"
+          id="card-number"
+          placeholder="Esse é só pra gente ter certeza"
+        />
+      </div>
+
+      <button type="submit">Finalizar Compra</button>
+    </form>
+  </div>
 </template>
 
 <style scoped>
@@ -20,12 +50,31 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+input,
+label {
+  display: block;
+}
+
+form {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-top: 4px;
+  min-width: 300px;
+}
 </style>
 
 <script>
-import CartItem from '@/components/CartItem'
+import CartItem from "@/components/CartItem";
 
 export default {
-    components: {CartItem}
-}
+  components: { CartItem },
+};
 </script>
