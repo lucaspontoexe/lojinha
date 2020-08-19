@@ -24,6 +24,12 @@ export default {
   margin: 80px auto;
 }
 
+h1 {
+  font-size: 24pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
 .shopping-items {
   display: flex;
   gap: 30px;

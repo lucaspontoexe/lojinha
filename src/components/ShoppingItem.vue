@@ -16,7 +16,6 @@
   background: #f4f4f4;
   border-radius: 6px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  
 
   img {
     width: 100%;
@@ -24,17 +23,12 @@
     object-fit: cover;
   }
 
-  h1,
-  p,
-  strong {
-    padding: 0px 14px;
-  }
-
   h1 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
+    margin: 0.5em 14px;
   }
 
   p {
@@ -42,14 +36,18 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+    margin: 0.5em 14px;
 
     color: #686868;
   }
 
   strong {
+    display: block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 20px;
+    margin: 1em 14px;
+
   }
 }
 
