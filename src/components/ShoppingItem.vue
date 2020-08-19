@@ -12,12 +12,11 @@
 .shopping-item {
   position: relative;
   width: 200px;
-  height: 256px;
+  height: 280px;
   background: #f4f4f4;
   border-radius: 6px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  // overflow: hidden;
-  //   box-sizing: border-box;
+  
 
   img {
     width: 100%;
@@ -51,7 +50,6 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
-    margin-bottom: 6px;
   }
 }
 
