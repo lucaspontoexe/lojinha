@@ -15,7 +15,7 @@
 .cart-item {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 180px;
   background: #f4f4f4;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -30,8 +30,7 @@
 }
 
 img {
-  // height: calc(100% - 12px);
-  height: 256px;
+  height: 100%;
   border-radius: 4px;
   object-fit: cover;
 }
@@ -42,20 +41,20 @@ img {
 
   h1 {
     font-weight: bold;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 40px;
   }
 
   p {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
     color: #a3a3a3;
   }
 }
 
 .price {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 40px;
   text-align: right;
   margin-right: 10px;
   line-height: 60px;
@@ -70,13 +69,15 @@ img {
     height: auto;
   }
   h1 {
-    font-size: 32px;
+    margin-top: 8px;
   }
-  p {
-    font-size: 18px;
+
+  .details {
+    padding-left: 0px;
   }
   .price {
-    font-size: 32px;
+    font-size: 28px;
+    margin-right: 0px;
   }
 }
 </style>

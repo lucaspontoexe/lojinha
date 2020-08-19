@@ -1,10 +1,6 @@
 <template>
   <div id="page-cart">
     <h1>Carrinho</h1>
-    <!-- TODO de baixíssima prioridade: reduzir o tamanho desses itens. -->
-    <div>
-      <i style="font-style: italic;">Grandes</i> itens pra você se impressionar
-    </div>
 
     <CartItem />
     <CartItem />
