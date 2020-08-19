@@ -35,4 +35,13 @@ h1 {
   gap: 30px;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 942px) {
+  .shopping-items {
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+  }
+}
 </style>

@@ -2,9 +2,9 @@
 <div id="page-cart">
     <h1>Carrinho</h1>
 
-    no items (yet)
     <CartItem/>
-    
+    <CartItem/>
+
 </div>
 </template>
 

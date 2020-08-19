@@ -6,7 +6,7 @@
     <div class="nav-item">
       <router-link to="/" class="lojinha-logo">lojinha</router-link>
     </div>
-    <div class="nav-item">
+    <div class="nav-item cart-icon">
       <router-link to="/cart">Carrinho (0)</router-link>
     </div>
   </nav>
@@ -42,5 +42,10 @@ a {
   text-align: center;
   display: flex;
   justify-content: center;
+}
+
+.nav-item.cart-icon {
+  text-align: right;
+  margin-right: 20px;
 }
 </style>
