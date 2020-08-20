@@ -1,6 +1,6 @@
 <template>
   <div class="shopping-item">
-    <img :src="`/products/${data.image}`" alt="Foto do Corsa não-capotado" />
+    <img :src="`products/${data.image}`" alt="Foto do Corsa não-capotado" />
     <h1>{{data.name}}</h1>
     <p>{{data.description}}</p>
     <strong class="price">R$ {{data.price}}</strong>
