@@ -72,14 +72,16 @@ import store from "@/store";
 
 export default {
   components: { CartItem },
-  data: () => ({ cartItems: store.state.cartItems }),
-  computed: { totalPrice: () => store.getters.totalCartPrice },
+  computed: {
+    totalPrice: () => store.getters.totalCartPrice,
+    cartItems: () => store.state.cartItems,
+  },
   methods: {
     postForm() {
-      //stub function. TODO: limpar carrinho e salvar numa "lista" de compras
-      // bonus points se for assíncrono
-      alert('tá pago. Vou ver ali e te aviso.')
-    }
-  }
+      store
+        .dispatch("checkout")
+        .then(() => alert("tá comprado. Vou ver ali e te aviso."));
+    },
+  },
 };
 </script>
