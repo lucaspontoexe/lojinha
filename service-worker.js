@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lojinha/precache-manifest.0dbd38dc2dbb52eb3f702027ad315c22.js"
+  "/lojinha/precache-manifest.c3f5d33dafb99ed683d7e69b81f6d610.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "lojinha"});

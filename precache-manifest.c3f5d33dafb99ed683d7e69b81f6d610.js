@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56b146f5383c5549713e",
-    "url": "/lojinha/css/app.e3c415d3.css"
+    "revision": "79b73f75f3e6882b8aaa",
+    "url": "/lojinha/css/app.5b0332c8.css"
   },
   {
-    "revision": "89a8ee1c074498cd1a8a712023885ecc",
+    "revision": "b469cb6e31d2c00e7b5dd93de1cceb2b",
     "url": "/lojinha/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lojinha/js/about.3c4d9971.js"
   },
   {
-    "revision": "56b146f5383c5549713e",
-    "url": "/lojinha/js/app.8e8454bc.js"
+    "revision": "79b73f75f3e6882b8aaa",
+    "url": "/lojinha/js/app.b9588f1e.js"
   },
   {
     "revision": "288bd11faa8f95424a68",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "21b8ce99594ee96d412a8ad6e1a07b69",
     "url": "/lojinha/products/corsa.png"
+  },
+  {
+    "revision": "85f31e208efd1d3bfa32ddcb1119ee87",
+    "url": "/lojinha/products/hacktoberfest.jpg"
   },
   {
     "revision": "c1e7f73c166b4851152c93f3f2ba3342",
