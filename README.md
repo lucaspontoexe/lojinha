@@ -1,4 +1,22 @@
-# ui-clone-router
+# lojinha
+_Aqui você não paga, mas também não leva._
+
+Um projeto para de demonstração para testar e conhecer a biblioteca de gerenciamento de estado vuex
+
+## 🧪 O que tem de experimento:
+
+- Typescript
+- vue-class-decorator
+- Store getters
+
+
+Vale lembrar que o projeto ainda é um WIP (work-in-progress).
+
+
+
+
+_(aqui são só coisas geradas pelo app vue-cli)_
+----
 
 ## Project setup
 ```
