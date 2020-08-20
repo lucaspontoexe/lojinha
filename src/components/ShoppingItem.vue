@@ -1,6 +1,6 @@
 <template>
   <div class="shopping-item">
-    <img :src="`products/${data.image}`" alt="Foto do Corsa não-capotado" />
+    <img :src="`products/${data.image}`" alt="Foto do Produto" />
     <h1>{{data.name}}</h1>
     <p>{{data.description}}</p>
     <strong class="price">R$ {{data.price}}</strong>
@@ -17,10 +17,14 @@
   border-radius: 6px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
+  display: flex;
+  flex-direction: column;
+
   img {
     width: 100%;
     height: 156px;
     object-fit: cover;
+    border-radius: 4px 4px 0px 0px;
   }
 
   h1 {
@@ -29,6 +33,7 @@
     font-weight: bold;
     font-size: 18px;
     margin: 0.5em 14px;
+    flex: 1;
   }
 
   p {
@@ -39,6 +44,7 @@
     margin: 0.5em 14px;
 
     color: #686868;
+    flex: 1;
   }
 
   strong {
@@ -46,7 +52,8 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 20px;
-    margin: 1em 14px;
+    margin-left: 14px;
+    flex: 2;
   }
 }
 
