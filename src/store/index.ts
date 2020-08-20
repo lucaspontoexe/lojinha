@@ -18,6 +18,10 @@ export default new Vuex.Store({
   actions: {},
   modules: {},
   getters: {
-    itemsInCart: store => store.cartItems.length
-  }
+    itemsInCart: (store) => store.cartItems.length,
+    totalCartPrice: (store) =>
+      store.cartItems
+        .map((i) => i.price)
+        .reduce((total, currentItem) => total + currentItem, 0),
+  },
 });

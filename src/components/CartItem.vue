@@ -1,13 +1,13 @@
 <template>
   <div class="cart-item">
-    <img src="@/assets/corsa.png" alt="Foto do Corsa não-capotado" />
+    <img :src="`/products/${data.image}`" alt="Foto do Corsa não-capotado" />
 
     <section class="details">
-      <h1>Corsa Horizon</h1>
-      <p>Dá pra fazer altos drifts com ele</p>
+      <h1>{{data.name}}</h1>
+      <p>{{data.description}}</p>
     </section>
 
-    <div class="price">R$ 8000</div>
+    <div class="price">R$ {{data.price}}</div>
   </div>
 </template>
 
@@ -81,3 +81,13 @@ img {
   }
 }
 </style>
+
+<script lang="ts">
+import { Component, Prop, Vue } from "vue-property-decorator";
+import Product from "@/types/Product";
+
+@Component
+export default class CartItem extends Vue {
+  @Prop() private data!: Product;
+}
+</script>

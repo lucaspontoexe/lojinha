@@ -2,11 +2,10 @@
   <div id="page-cart">
     <h1>Carrinho</h1>
 
-    <CartItem />
-    <CartItem />
+    <CartItem :data="item" v-for="(item, index) in cartItems" :key="index" />
 
     <form action="#" class="checkout">
-      <h1>Total: R$ 16000</h1>
+      <h1>Total: R$ {{totalPrice}}</h1>
 
       <div class="field">
         <label for="address">Endereço</label>
@@ -69,8 +68,11 @@ input {
 
 <script>
 import CartItem from "@/components/CartItem";
+import store from "@/store";
 
 export default {
   components: { CartItem },
+  data: () => ({ cartItems: store.state.cartItems }),
+  computed: { totalPrice: () => store.getters.totalCartPrice },
 };
 </script>
