@@ -4,7 +4,7 @@
 
     <CartItem :data="item" v-for="(item, index) in cartItems" :key="index" />
 
-    <form action="#" class="checkout">
+    <form @submit.prevent="postForm" class="checkout">
       <h1>Total: R$ {{totalPrice}}</h1>
 
       <div class="field">
@@ -74,5 +74,12 @@ export default {
   components: { CartItem },
   data: () => ({ cartItems: store.state.cartItems }),
   computed: { totalPrice: () => store.getters.totalCartPrice },
+  methods: {
+    postForm() {
+      //stub function. TODO: limpar carrinho e salvar numa "lista" de compras
+      // bonus points se for assíncrono
+      alert('tá pago. Vou ver ali e te aviso.')
+    }
+  }
 };
 </script>
