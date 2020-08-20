@@ -12,5 +12,12 @@
         "image": "mosco.png",
         "price": 49.99,
         "description": "Esse é perigoso, cuidado"
+    },
+    {
+        "id": 2,
+        "name": "Camiseta da Hacktoberfest 2019",
+        "image": "hacktoberfest.jpg",
+        "price": 100,
+        "description": "Edição limitada. Eu fui, eu tava."
     }
 ]
