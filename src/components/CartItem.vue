@@ -31,6 +31,7 @@
 
 img {
   height: 100%;
+  width: 20%;
   border-radius: 4px;
   object-fit: cover;
 }

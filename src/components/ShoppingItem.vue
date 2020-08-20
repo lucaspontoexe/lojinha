@@ -4,7 +4,7 @@
     <h1>{{data.name}}</h1>
     <p>{{data.description}}</p>
     <strong class="price">R$ {{data.price}}</strong>
-    <button class="add-to-cart" @click="addItemToCart">+</button>
+    <button class="add-to-cart" @click="addItemToCart">Adicionar ao carrinho</button>
   </div>
 </template>
 
@@ -12,7 +12,6 @@
 .shopping-item {
   position: relative;
   width: 200px;
-  height: 280px;
   background: #f4f4f4;
   border-radius: 6px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -58,14 +57,20 @@
 }
 
 button {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 40px;
+  width: 96%;
   height: 40px;
-  border-radius: 6px;
+  margin: 8px auto 4px;
+  border-radius: 4px;
   border: 0;
-  background: #94ffab;
+  cursor: pointer;
+    
+  background-color: #2d9c45;
+  color: white;
+  transition: background-color 500ms;
+
+  &:hover {
+    background-color: lighten($color: #4ec969, $amount: 2);
+  }
 }
 </style>
 
