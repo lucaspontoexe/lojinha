@@ -7,7 +7,7 @@
       <router-link to="/" class="lojinha-logo">lojinha</router-link>
     </div>
     <div class="nav-item cart-icon">
-      <router-link to="/cart">Carrinho (0)</router-link>
+      <router-link to="/cart">Carrinho ({{itemsInCart}})</router-link>
     </div>
   </nav>
 </template>
@@ -17,7 +17,7 @@ nav {
   position: sticky;
   top: 0px;
   height: 60px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 1;
 
   display: flex;
@@ -49,3 +49,13 @@ a {
   margin-right: 20px;
 }
 </style>
+
+<script>
+import store from "@/store";
+
+export default {
+  computed: {
+    itemsInCart: () => store.getters.itemsInCart,
+  },
+};
+</script>

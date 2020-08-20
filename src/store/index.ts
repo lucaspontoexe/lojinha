@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import productList from "@/products.json";
 import Product from "@/types/Product";
+import productList from "@/products.json";
 
 Vue.use(Vuex);
 
@@ -17,4 +17,7 @@ export default new Vuex.Store({
   },
   actions: {},
   modules: {},
+  getters: {
+    itemsInCart: store => store.cartItems.length
+  }
 });
