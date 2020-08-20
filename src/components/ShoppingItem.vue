@@ -4,7 +4,7 @@
     <h1>{{data.name}}</h1>
     <p>{{data.description}}</p>
     <strong class="price">R$ {{data.price}}</strong>
-    <button class="add-to-cart">+</button>
+    <button class="add-to-cart" @click="addItemToCart">+</button>
   </div>
 </template>
 
@@ -64,17 +64,15 @@ button {
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-
-interface Product {
-  id: number;
-  name: string;
-  image: string;
-  price: number;
-  description: string;
-}
+import store from '@/store'
+import Product from '@/types/Product'
 
 @Component
 export default class ShoppingItem extends Vue {
   @Prop() private data!: Product;
+
+  addItemToCart() {
+    store.commit('addToCart', this.data);
+  }
 }
 </script>

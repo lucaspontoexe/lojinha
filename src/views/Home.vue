@@ -13,12 +13,12 @@
 
 <script>
 import ShoppingItem from "@/components/ShoppingItem";
-import productList from "@/products.json";
+import store from '@/store';
 
 export default {
   components: { ShoppingItem },
   data: function () {
-    return { productList };
+    return { productList: store.state.products };
   },
 };
 </script>
