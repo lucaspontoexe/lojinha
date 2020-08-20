@@ -1,7 +1,7 @@
 # lojinha
 _Aqui você não paga, mas também não leva._
 
-Um projeto para de demonstração para testar e conhecer a biblioteca de gerenciamento de estado vuex
+Um projeto para de demonstração para testar e conhecer a biblioteca de gerenciamento de estado vuex. [Demo](https://lucaspontoexe.github.io/lojinha)
 
 ## 🧪 O que tem de experimento:
 
@@ -12,11 +12,9 @@ Um projeto para de demonstração para testar e conhecer a biblioteca de gerenci
 
 Vale lembrar que o projeto ainda é um WIP (work-in-progress).
 
+_(daqui pra baixo são só coisas geradas pelo app vue-cli)_
 
 
-
-_(aqui são só coisas geradas pelo app vue-cli)_
-----
 
 ## Project setup
 ```
