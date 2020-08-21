@@ -4,7 +4,10 @@
     <h1>{{data.name}}</h1>
     <p>{{data.description}}</p>
     <strong class="price">R$ {{data.price}}</strong>
-    <button class="add-to-cart" @click="addItemToCart">Adicionar ao carrinho</button>
+
+    <!-- toggle button -->
+    <button v-if="!isItemInCart()" class="add-to-cart" @click="addItemToCart">Adicionar ao carrinho</button>
+    <button v-else class="remove-from-cart" @click="removeItemFromCart">Remover do carrinho</button>
   </div>
 </template>
 
@@ -63,28 +66,38 @@ button {
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-    
-  background-color: #2d9c45;
+
   color: white;
   transition: background-color 500ms;
 
-  &:hover {
-    background-color: lighten($color: #4ec969, $amount: 2);
+  &.add-to-cart {
+    background-color: #2d9c45;
+    &:hover {
+      background-color: lighten($color: #4ec969, $amount: 2);
+    }
+  }
+
+  &.remove-from-cart {
+    background-color: #464646;
+    &:hover {
+      background-color: lighten($color: #727272, $amount: 2);
+    }
   }
 }
 </style>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import store from '@/store'
-import Product from '@/types/Product'
+import store from "@/store";
+import Product from "@/types/Product";
 
 @Component
 export default class ShoppingItem extends Vue {
   @Prop() private data!: Product;
 
-  addItemToCart() {
-    store.commit('addToCart', this.data);
-  }
+  addItemToCart = () => store.commit("addToCart", this.data);
+  removeItemFromCart = () => store.commit("removeItemFromCart", this.data);
+  isItemInCart = () =>
+    store.state.cartItems.find((item) => item.id === this.data.id) && true;
 }
 </script>

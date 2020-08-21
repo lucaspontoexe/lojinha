@@ -12,8 +12,11 @@ export default new Vuex.Store({
     cartItems: Array<Product>(),
   },
   mutations: {
-    addToCart(state, item) {
+    addToCart(state, item: Product) {
       state.cartItems.push(item);
+    },
+    removeItemFromCart(state, product: Product) {
+      state.cartItems = state.cartItems.filter(item => item.id !== product.id)
     },
     clearCart(state) {
       state.cartItems = [];
